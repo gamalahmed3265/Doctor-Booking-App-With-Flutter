@@ -2,6 +2,7 @@ import 'package:doctor_booking/model/doctor_category.dart';
 import 'package:flutter/material.dart';
 
 import '../model/doctor.dart';
+import '../shared/widget/bottom_nav_bars.dart';
 import '../shared/widget/catgory_model.dart';
 import '../shared/widget/doctor_list_tile.dart';
 import '../shared/widget/search_bar.dart';
@@ -18,8 +19,8 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    final colorScheme = Theme.of(context).colorScheme;
     return Scaffold(
+      bottomNavigationBar: const MainNavBar(),
       appBar: AppBar(
         toolbarHeight: 80,
         title: CustomAppBar(textTheme: textTheme),

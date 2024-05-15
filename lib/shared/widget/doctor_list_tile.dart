@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../const/colors.dart';
 import '../../model/doctor.dart';
-import '../../screens/search_see_more.dart';
+import '../../screens/book_appointment.dart';
 
 class CustomDoctorListTile extends StatelessWidget {
   final List<Doctor> listDoctorModel;
@@ -71,6 +71,10 @@ class CustomDoctorListTile extends StatelessWidget {
                   children: [
                     const Icon(
                       Icons.date_range_outlined,
+                      color: blueColor,
+                    ),
+                    const SizedBox(
+                      width: 10,
                     ),
                     Text(
                       "4.5 Years",
@@ -82,12 +86,19 @@ class CustomDoctorListTile extends StatelessWidget {
             )
           ],
         ),
-        trailing: Container(
-          width: 150,
-          height: 50,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-              color: blueColor, borderRadius: BorderRadius.circular(15)),
+        trailing: FilledButton(
+          style: const ButtonStyle(
+              shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)))),
+              backgroundColor: MaterialStatePropertyAll(blueColor)),
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (_) => BookAppointment(
+                          doctor: listDoctorModel[index],
+                        )));
+          },
           child: Text(
             "Book Now",
             textAlign: TextAlign.center,
