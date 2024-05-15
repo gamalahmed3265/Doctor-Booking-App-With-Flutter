@@ -1,8 +1,6 @@
 import 'package:doctor_booking/const/colors.dart';
 import 'package:doctor_booking/model/doctor_category.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../model/doctor.dart';
 import '../shared/widget/doctor_list_tile.dart';
