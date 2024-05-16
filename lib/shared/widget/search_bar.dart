@@ -1,5 +1,7 @@
 import 'package:doctor_booking/const/colors.dart';
+import 'package:doctor_booking/state/home/home_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CustomSearchSection extends StatelessWidget {
   CustomSearchSection({
@@ -8,8 +10,6 @@ class CustomSearchSection extends StatelessWidget {
   final TextEditingController controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
     return Container(
         decoration: BoxDecoration(
             color: grayColor, borderRadius: BorderRadius.circular(15)),
@@ -40,7 +40,7 @@ class CustomSearchSection extends StatelessWidget {
                     ),
               suffixIcon: InkWell(
                 onTap: () {
-                  print("object");
+                  BlocProvider.of<HomeBloc>(context).add(LoadHomeEvent());
                 },
                 child: Container(
                   margin: const EdgeInsets.all(4),
