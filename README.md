@@ -13,5 +13,4 @@
 If you're looking for the complete template for a Doctor Booking app:
 - DocFinder: An Doctor Booking app template: https://www.atomsbox.com/templates/doc-finder
 
-![Hero](screenshots/doctor_booking_app.png)
 ![hero](https://github.com/gamalahmed3265/Doctor-Booking-App-With-Flutter/assets/75225936/6815fcb4-48aa-4f06-ae97-5c00d84acad2)
