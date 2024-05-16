@@ -63,7 +63,7 @@ class MyHomePage extends StatelessWidget {
                     },
                   ),
                   const SplitWideget(),
-                  CustomScheduleCard(textTheme: textTheme),
+                  const CustomScheduleCard(),
                   const SplitWideget(),
                   BodyTitle(
                     textTheme: textTheme,

@@ -1,4 +1,4 @@
-import 'package:doctor_booking/const/colors.dart';
+import 'package:doctor_booking/utils/colors.dart';
 import 'package:doctor_booking/model/doctor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

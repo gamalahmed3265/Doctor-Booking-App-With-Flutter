@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../const/colors.dart';
+import '../../utils/colors.dart';
 
 class MainNavBar extends StatelessWidget {
   const MainNavBar({super.key});
@@ -10,7 +10,6 @@ class MainNavBar extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return BottomNavigationBar(
-      
       selectedItemColor: blueColor,
       unselectedItemColor: black.withOpacity(0.5),
       showSelectedLabels: true,

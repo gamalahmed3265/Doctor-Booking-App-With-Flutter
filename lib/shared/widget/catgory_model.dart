@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../const/colors.dart';
+import '../../utils/colors.dart';
 import '../../model/doctor_category.dart';
 import '../../state/home/home_bloc.dart';
 
 class CustomCatgoryModel extends StatelessWidget {
-  const CustomCatgoryModel({super.key, required this.listCatgoryModel});
+  const CustomCatgoryModel(
+      {super.key, required this.listCatgoryModel, this.numOfCatgaory = 5});
   final List<DoctorCategory> listCatgoryModel;
+  final int numOfCatgaory;
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeBloc, HomeState>(
@@ -16,7 +18,7 @@ class CustomCatgoryModel extends StatelessWidget {
           height: 100,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
-            itemCount: listCatgoryModel.length,
+            itemCount: numOfCatgaory,
             separatorBuilder: (context, index) => const SizedBox(width: 10),
             itemBuilder: (context, index) => InkWell(
               onTap: () {
