@@ -1,16 +1,16 @@
-# doctor_booking
+# DocFinder: A Doctor Booking App
+<table>
+  <tr>
+    <td><img src="assets/icons/app_icon.png" alt="DocFinder" style="width: 300px;"/></td>
+    <td>
+      <strong>DocFinder</strong> is a doctor booking app template built by <a href="https://atomsbox.com">atomsbox.com</a>. It gives you a modern UI to handle the process of scheduling and managing appointments for both patients and healthcare providers. This template is a starting point for developers looking to create a doctor booking app without building everything from scratch.
+    </td>
+  </tr>
+</table>
 
-A new Flutter project.
+- YouTube video: https://youtu.be/bi9edEhFWUA
 
-## Getting Started
+If you're looking for the complete template for a Doctor Booking app:
+- DocFinder: An Doctor Booking app template: https://www.atomsbox.com/templates/doc-finder
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Hero](screenshots/doctor_booking_app.png)
